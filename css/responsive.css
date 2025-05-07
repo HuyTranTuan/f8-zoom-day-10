@@ -17,7 +17,7 @@ html {
   .navigation,
   .body,
   .footer {
-    max-width: 100%;
+    max-width: 90%;
   }
   .navigation {
     flex-wrap: wrap;
@@ -75,6 +75,14 @@ html {
     margin-top: 1rem;
     font-size: 4rem;
     color: var(--white);
+  }
+
+  .header-search button {
+    width: 4rem;
+  }
+
+  .header-search {
+    width: 18rem;
   }
 
   .body {
@@ -128,7 +136,7 @@ html {
   .navigation,
   .body,
   .footer {
-    max-width: 100%;
+    max-width: 90%;
   }
   .navigation {
     flex-wrap: wrap;
@@ -186,6 +194,9 @@ html {
     margin-top: 1rem;
     font-size: 4rem;
     color: var(--white);
+  }
+  .header-search {
+    width: 24rem;
   }
 
   .body {

@@ -69,6 +69,7 @@ textarea {
 }
 .toggle-nav {
   display: none;
+  cursor: pointer;
 }
 
 .navigation .header-navigation > ul {
@@ -267,8 +268,15 @@ textarea {
   font-family: var(--pt-sans);
 }
 
-.header-breadcrumb ul li a:hover {
+.header-breadcrumb ul li:not(:last-child) a {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: var(--white);
+}
+
+.header-breadcrumb ul li:not(:last-child) a:hover {
   color: var(--secondary-color);
+  text-decoration-color: var(--secondary-color);
 }
 
 /*=========================================================================
@@ -355,6 +363,14 @@ textarea {
 .shop-categories ul li a:hover {
   color: var(--primary-color);
 }
+.shop-categories ul li a span {
+  display: inline-block;
+  transition: translate 0.3s ease-in;
+}
+
+.shop-categories ul li a:hover span {
+  translate: 0.5rem 0;
+}
 
 .popular-product ul li {
   display: flex;
@@ -440,6 +456,7 @@ textarea {
   line-height: 4.5rem;
   color: #6f6f6f;
   font-family: var(--pt-sans);
+  cursor: pointer;
 }
 
 .select-dropdown {
@@ -471,6 +488,7 @@ textarea {
   opacity: 1;
   visibility: visible;
   scale: 1;
+  z-index: 1;
 }
 
 .show-result {
@@ -587,6 +605,11 @@ textarea {
   font-family: var(--source-sans);
   transition: background-color 0.3s ease;
 }
+
+.body-pagination li:first-child a {
+  background-color: var(--secondary-color);
+}
+
 .body-pagination li:last-child a {
   margin-left: 0.6rem;
 }
@@ -667,6 +690,10 @@ textarea {
   line-height: 3rem;
   text-decoration: none;
   color: var(--footer-color);
+  transition: color 0.3s ease-in;
+}
+.footer-small ul li a:hover {
+  color: var(--primary-color);
 }
 
 .footer-container form input {
